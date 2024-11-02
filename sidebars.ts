@@ -16,16 +16,16 @@ const sidebars: SidebarsConfig = {
   windows: [
     {
       type: 'category',
-      label: 'Windows Documentation',
+      label: 'Windows',
       items: [
         {
           type: 'category',
-          label: 'WSL Documentation',
+          label: 'WSL',
           items: [
             'windows/WSL/index',
             {
               type: 'category',
-              label: 'Overview',
+              label: '概述',
               items: [
                 'windows/WSL/about',
                 'windows/WSL/compare-versions',
@@ -34,7 +34,7 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'category',
-              label: 'Install',
+              label: '安装',
               items: [
                 'windows/WSL/install',
                 'windows/WSL/install-manual',
@@ -43,7 +43,7 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'category',
-              label: 'Tutorials',
+              label: '教程',
               items: [
                 'windows/WSL/setup/environment',
                 'windows/WSL/tutorials/wsl-vscode',
@@ -59,7 +59,7 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'category',
-              label: 'Concepts',
+              label: '概念',
               items: [
                 'windows/WSL/filesystems',
                 'windows/WSL/wsl-config',
@@ -70,7 +70,7 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'category',
-              label: 'How-to',
+              label: '如何做',
               items: [
                 'windows/WSL/use-custom-distro',
                 'windows/WSL/build-custom-distro',
@@ -83,7 +83,7 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'category',
-              label: 'Enterprise security',
+              label: '企业安全',
               items: [
                 'windows/WSL/enterprise',
                 'windows/WSL/intune',
@@ -93,7 +93,7 @@ const sidebars: SidebarsConfig = {
             'windows/WSL/troubleshooting',
             {
               type: 'category',
-              label: 'Release Notes',
+              label: '发行说明',
               items: [
                 'windows/WSL/release-notes',
                 'windows/WSL/kernel-release-notes',
