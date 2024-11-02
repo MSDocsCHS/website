@@ -30,7 +30,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.info {
+.info, .provider {
   opacity: 0.5;
   font-size: 0.95rem;
 }

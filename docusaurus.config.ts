@@ -149,9 +149,11 @@ const config: Config = {
           label: '关于广告',
         },
       ],
-      copyright: `文档内容由 Microsoft 与所有贡献者以 <a href="https://creativecommons.org/licenses/by/4.0/legalcode.zh-hans">CC BY 4.0</a> 共享。使用 Docusaurus 构建。
+      copyright: `文档内容由 Microsoft 与所有贡献者以 <a href="https://creativecommons.org/licenses/by/4.0/legalcode.zh-hans">CC BY 4.0</a> 共享。
       <br />
-      <span class="info"><i>本项目与 Microsoft Corporation 无关。文档中提到的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家的商标或注册商标。</i></span>`,
+      <span class="info"><i>本项目与 Microsoft Corporation 无关。文档中提到的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家的商标或注册商标。</i></span>
+      <br />
+      <span class="provider">本站点使用 Docusaurus 由 GitHub Actions 自动化构建。Microsoft Azure 提供了 CDN 服务。</span>`,
     },
     prism: {
       theme: prismThemes.github,
