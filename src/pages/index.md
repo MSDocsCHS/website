@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::info
 该站点当前仍在初期调试阶段。并非所有的文档都被包括在内。该范围将在后期逐渐扩充。  
-由于主要维护者精力有限，并非所有文档都会被及时翻译。通常而言，具备高优先级翻译标签（由原始文件中的 ms.localizationpriority 标签指定）、新鲜度更佳（由原始文件中的 ms.date 标签指定）的文档会被优先翻译。我们鼓励维护原始文件的相关员工妥善标记这些标签。
+由于主要维护者精力有限，并非所有文档都会被及时翻译。通常而言，具备高优先级翻译标签（由原始文件中的 `ms.localizationpriority` 标签指定）、新鲜度更佳（由原始文件中的 `ms.date` 标签指定）的文档会被优先翻译。我们鼓励维护原始文件的相关员工妥善标记这些标签。
 :::
 
 ## 参与贡献
@@ -28,4 +28,4 @@ hide_table_of_contents: true
 
 Caozhi Li  
 HI@CAOZHI.LI (个人)  
-CAOZHI.LI@STUDENTAMBASSADORS.COM ([学生大使](https://mvp.microsoft.com/en-US/studentambassadors/profile/1d57cd2f-1aa6-470d-96c7-3609269bb3c2) / Teams \<若您是 Microsoft 员工，请直接在 Microsoft 组织内搜索 Caozhi Li>)
+CAOZHI.LI@STUDENTAMBASSADORS.COM ([学生大使](https://mvp.microsoft.com/en-US/studentambassadors/profile/1d57cd2f-1aa6-470d-96c7-3609269bb3c2) / Teams [若您是 Microsoft 员工，请直接在 Microsoft 组织内搜索 Caozhi Li])
