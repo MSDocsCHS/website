@@ -158,7 +158,7 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
   clientModules: [
     require.resolve('./src/clientModules/addWtMcId.ts'),
-  ],
+  ]
 };
 
 export default config;
