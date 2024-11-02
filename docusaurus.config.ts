@@ -41,6 +41,10 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'https://learn.microsoft.com/zh-cn/media/open-graph-image.png',
+    colorMode: {
+      defaultMode: 'light',
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'MSDocsCHS',
       items: [
