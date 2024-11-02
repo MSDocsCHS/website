@@ -29,6 +29,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          routeBasePath: '/', // 将文档暴露在根路径下
         },
         theme: {
           customCss: './src/css/custom.css',
