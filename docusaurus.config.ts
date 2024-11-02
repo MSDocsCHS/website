@@ -102,11 +102,6 @@ const config: Config = {
             }
           ],
         },
-        {
-          to: '/about',
-          label: '关于',
-          position: 'right',
-        },
       ],
     },
     footer: {
