@@ -10,6 +10,11 @@ hide_table_of_contents: true
 
 我们无法保障每篇文章都拥有很高的翻译质量与同步速度，但……大概会比官方的好一点？
 
+:::info
+该站点当前仍在初期调试阶段。并非所有的文档都被包括在内。该范围将在后期逐渐扩充。  
+由于主要维护者精力有限，并非所有文档都会被及时翻译。通常而言，具备高优先级翻译标签（由原始文件中的 ms.localizationpriority 标签指定）、新鲜度更佳（由原始文件中的 ms.date 标签指定）的文档会被优先翻译。我们鼓励维护原始文件的相关员工妥善标记这些标签。
+:::
+
 ## 参与贡献
 
 你可以以以下方式参与贡献本项目：
@@ -18,6 +23,8 @@ hide_table_of_contents: true
 - 把这个网站分享给有需要的人。
 
 ## 联系
+
+[GitHub 讨论](https://github.com/orgs/MSDocsCHS/discussions)
 
 Caozhi Li  
 HI@CAOZHI.LI (个人)  
