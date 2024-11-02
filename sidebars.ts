@@ -21,8 +21,11 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'WSL',
+          link: {
+            type: 'doc',
+            id: 'windows/WSL/index',
+          },
           items: [
-            'windows/WSL/index',
             {
               type: 'category',
               label: '概述',
