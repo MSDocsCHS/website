@@ -166,6 +166,7 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
   clientModules: [
     require.resolve('./src/clientModules/addWtMcId.ts'),
+    require.resolve('./src/clientModules/Metadata.tsx'),
   ]
 };
 
