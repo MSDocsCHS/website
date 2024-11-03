@@ -10,18 +10,6 @@ const Metadata: React.FC = () => {
 
         if (!msTopic && !msDate) return null;
 
-        // Convert date format if exists
-        if (msDate) {
-            const date = new Date(msDate as string);
-            if (!isNaN(date.getTime())) {
-                msDate = date.toLocaleDateString('zh-CN', {
-                    year: 'numeric',
-                    month: '2-digit',
-                    day: '2-digit',
-                }).replace(/\//g, '/');
-            }
-        }
-
         // Decode msTopic to Chinese
         if (msTopic === 'overview') {
             msTopic = '概述';
@@ -35,11 +23,23 @@ const Metadata: React.FC = () => {
             msTopic = null;
         }
 
+        // Convert date format if exists
+        if (msDate) {
+            const date = new Date(msDate as string);
+            if (!isNaN(date.getTime())) {
+                msDate = date.toLocaleDateString('zh-CN', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                }).replace(/\//g, '/');
+            }
+        }
+
         return (
             <div>
                 <ul className="metadata page-metadata" lang="zh-cn" dir="ltr">
                     {msTopic && <li>{msTopic}</li>}
-                    {msDate && 
+                    {msDate &&
                         <li>
                             <time title="此标签在内部用于标识文章新鲜度。它不一定是最后更新时间。">
                                 {msDate}
