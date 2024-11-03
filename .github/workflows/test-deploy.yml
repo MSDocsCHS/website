@@ -23,6 +23,6 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Sync docs from external repos
-        run: git clone https://github.com/MSDocsCHS/WSL-pr.zh-CN ${{ github.workspace }}/docs/windows/WSL
+        run: git clone https://github.com/MSDocsCHS/WSL-pr.zh-CN ${{ github.workspace }}/docs/windows/wsl
       - name: Test build website
         run: yarn build
