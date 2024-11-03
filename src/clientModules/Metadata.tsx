@@ -35,6 +35,10 @@ const Metadata: React.FC = () => {
             }
         }
 
+        // convert current url to orig url
+        const currentPath = window.location.pathname;
+        const origUrl = "https://learn.microsoft.com/en-us" + currentPath;
+
         return (
             <div>
                 <ul className="metadata page-metadata" lang="zh-cn" dir="ltr">
@@ -46,6 +50,11 @@ const Metadata: React.FC = () => {
                             </time>
                         </li>
                     }
+                    <li>
+                        <a href={origUrl}>
+                            英语原文
+                        </a>
+                    </li>
                 </ul>
             </div>
         );
