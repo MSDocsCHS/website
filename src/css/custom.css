@@ -34,3 +34,18 @@
   opacity: 0.5;
   font-size: 0.95rem;
 }
+
+.breadcrumbs__item:is(:first-child) {
+  display: none;
+}
+
+.breadcrumbs__item:not(:first-child)::after {
+  display: inline-block;
+  --ifm-breadcrumb-spacing: .25em;
+  height: calc(var(--ifm-breadcrumb-separator-size)*var(--ifm-breadcrumb-size-multiplier)*var(--ifm-breadcrumb-separator-size-multiplier));
+  margin: 0 var(--ifm-breadcrumb-spacing);
+  background: none;
+  content: '/';
+  opacity: unset;
+  width: .25em;
+}
