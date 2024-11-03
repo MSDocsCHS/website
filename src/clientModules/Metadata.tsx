@@ -29,6 +29,10 @@ const Metadata: React.FC = () => {
             msTopic = '文章';
         } else if (msTopic === 'faq') {
             msTopic = '常见问题解答';
+        } else if (msTopic === 'conceptual') {
+            msTopic = '概念';
+        } else {
+            msTopic = null;
         }
 
         return (
