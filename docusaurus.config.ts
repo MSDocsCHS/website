@@ -41,6 +41,10 @@ const config: Config = {
     ],
   ],
 
+  markdown: {
+    format: 'detect',
+  },
+
   themeConfig: {
     // Replace with your project's social card
     image: 'https://learn.microsoft.com/zh-cn/media/open-graph-image.png',
