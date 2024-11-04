@@ -4,6 +4,10 @@ hide_table_of_contents: true
 
 # MSDocsCHS
 
+:::note
+平台主要维护者正在沉迷 <a href="https://hack.lug.ustc.edu.cn" title="中国科学技术大学第十一届信息安全大赛" target="_blank">~~信安原神~~</a>。平台维护可能在比赛结束前有所推迟。
+:::
+
 这是一个 [社区项目](https://github.com/MSDocsCHS)。
 
 由于 Microsoft Learn 平台的中文本地化实属难绷，我们决定自立门户，提供 **至少是人工校对过的** 中文本地化文档。
