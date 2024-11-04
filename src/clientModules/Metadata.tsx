@@ -37,7 +37,11 @@ const Metadata: React.FC = () => {
 
         // convert current url to orig url
         const currentPath = window.location.pathname;
-        const origUrl = "https://learn.microsoft.com/en-us" + currentPath;
+        let origUrl = "https://learn.microsoft.com/en-us" + currentPath;
+        // check if ms.orig overrided to other links
+        frontMatter?.['ms.orig'] && (origUrl = frontMatter?.['ms.orig'] as string);
+        // check if ms.orig set to false
+        frontMatter?.['ms.orig'] === false && (origUrl = null);
 
         return (
             <div>
@@ -50,11 +54,13 @@ const Metadata: React.FC = () => {
                             </time>
                         </li>
                     }
-                    <li>
-                        <a href={origUrl}>
-                            英语原文
-                        </a>
-                    </li>
+                    {origUrl &&
+                        <li>
+                            <a href={origUrl}>
+                                英语原文
+                            </a>
+                        </li>
+                    }
                 </ul>
             </div>
         );
