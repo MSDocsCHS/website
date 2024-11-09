@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+[![Deploy to GitHub Pages](https://github.com/MSDocsCHS/website/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/MSDocsCHS/website/actions/workflows/deploy.yml)
+
 ### Installation
 
 ```
