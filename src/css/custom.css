@@ -105,3 +105,15 @@
   width: 100%;
   aspect-ratio: 16/9;
 }
+
+.msg-bar-body p {
+  margin: 0 auto;
+}
+
+.fui-MessageBar {
+  padding-bottom: 10px;
+}
+
+.fui-MessageBar__bottomReflowSpacer {
+  display: none;
+}
