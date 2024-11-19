@@ -50,8 +50,6 @@ export default function AdmonitionLayout(props: Props): JSX.Element {
   const { colorMode } = useColorMode();
 
   const theme = colorMode === 'dark' ? webDarkTheme : webLightTheme;
-  
-  console.log(getIntent());
 
   return (
     <FluentProvider theme={theme}>
