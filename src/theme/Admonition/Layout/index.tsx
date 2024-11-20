@@ -35,12 +35,12 @@ export default function AdmonitionLayout(props: Props): JSX.Element {
   };
   const getIcon = (): JSX.Element => {
     switch (type) {
-      case 'Info': return <InfoFilled />;
-      case 'Note': return <InfoFilled />;
-      case 'Warning': return <WarningFilled />;
-      case 'Caution': return <WarningFilled />;
-      case 'Danger': return <FireFilled />;
-      case 'Tip': return <CheckmarkCircleFilled />;
+      case 'info': return <InfoFilled />;
+      case 'note': return <InfoFilled />;
+      case 'warning': return <WarningFilled />;
+      case 'caution': return <WarningFilled />;
+      case 'danger': return <FireFilled />;
+      case 'tip': return <CheckmarkCircleFilled />;
       default: return <InfoFilled />;
     }
   };
