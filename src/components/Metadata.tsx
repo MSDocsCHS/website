@@ -10,6 +10,7 @@ const Metadata: React.FC = () => {
         const { frontMatter } = metadata ?? {};
         let msTopic: string | undefined = frontMatter?.['ms.topic'] as string | undefined;
         let msDate: string | undefined = frontMatter?.['ms.date'] as string | undefined;
+        let appliesTo: string | undefined = frontMatter?.['appliesto'] as string | undefined;
 
         if (!msTopic && !msDate) return null;
 
@@ -64,9 +65,16 @@ const Metadata: React.FC = () => {
                         }
                         {origUrl &&
                             <li>
-                                <a href={origUrl}>
-                                    英语原文
-                                </a>
+                                <span>
+                                    <a href={origUrl}>
+                                        英语原文
+                                    </a>
+                                </span>
+                            </li>
+                        }
+                        {appliesTo &&
+                            <li>
+                                <span>适用于：<i>{appliesTo}</i></span>
                             </li>
                         }
                     </ul>
