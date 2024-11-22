@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@theme-original/DocItem/Layout';
 import type { Props } from '@theme/DocItem/Layout';
-import Metadata from '../../clientModules/Metadata';
+import Metadata from '../../components/Metadata';
 
 export default function LayoutWrapper(props: Props): JSX.Element {
   return (
