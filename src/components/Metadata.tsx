@@ -1,5 +1,8 @@
 import React from 'react';
 import { useDoc } from '@docusaurus/plugin-content-docs/client';
+import { FluentProvider, Tooltip } from "@fluentui/react-components";
+import { useColorMode } from '@docusaurus/theme-common';
+import { webLightTheme, webDarkTheme } from '@fluentui/react-components';
 
 const Metadata: React.FC = () => {
     try {
@@ -43,26 +46,32 @@ const Metadata: React.FC = () => {
         // check if ms.orig set to false
         frontMatter?.['ms.orig'] === false && (origUrl = null);
 
+        const { colorMode } = useColorMode();
+
+        const theme = colorMode === 'dark' ? webDarkTheme : webLightTheme;
+
         return (
-            <div>
-                <ul className="metadata page-metadata" lang="zh-cn" dir="ltr">
-                    {msTopic && <li>{msTopic}</li>}
-                    {msDate &&
-                        <li>
-                            <time title="此标签在内部用于标识文章新鲜度。它不一定是最后更新时间。">
-                                {msDate}
-                            </time>
-                        </li>
-                    }
-                    {origUrl &&
-                        <li>
-                            <a href={origUrl}>
-                                英语原文
-                            </a>
-                        </li>
-                    }
-                </ul>
-            </div>
+            <FluentProvider theme={theme} style={{ backgroundColor: 'unset' }}>
+                <div>
+                    <ul className="metadata page-metadata" lang="zh-cn" dir="ltr">
+                        {msTopic && <li>{msTopic}</li>}
+                        {msDate &&
+                            <li>
+                                <Tooltip withArrow content="此标签在内部用于标识文章新鲜度。它不一定代表该文章/页面的最后更新时间。" relationship="description">
+                                    <span>{msDate}</span>
+                                </Tooltip>
+                            </li>
+                        }
+                        {origUrl &&
+                            <li>
+                                <a href={origUrl}>
+                                    英语原文
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </FluentProvider>
         );
     } catch {
         return null;
