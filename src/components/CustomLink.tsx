@@ -3,7 +3,6 @@ import Link from '@docusaurus/Link';
 
 export const CustomLink = (props) => {
   const href = props.href || '';
-  // 修改正则表达式，排除 http 和 https 协议
   const customSchemeRegex = /^(?!https?:)[a-z]+(?:[-+.][a-z0-9]+)*:/i;
   const isCustomScheme = customSchemeRegex.test(href);
 
